@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta
+      name="Ideal Conditions"
+      content="Web site that determines ideal conditions for outdoor activites based on a location and the weather."
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Ideal Conditions</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <header>
+      <h1><img src="android-chrome-192x192.png"/> Ideal Conditions</h1>
+    </header>
+
+    <main>
+      <section>
+        <nav class="local">
+          
+          <a href="#about"> About</a>
+          <a href="#usage"> Usage</a>
+          <a href="#search"> Search</a>
+          <a href="#results"> Results</a>
+        </nav>
+
+        <article id="about">
+          <h2>About this website.</h2>
+            <p>Welcome to Ideal Conditions, the best resource for planning your next outdoor activity! Simply enter the
+              location you want to be outdoors and this page will display a list of if/when in the next six days the
+              weather conditions are ideal for running, fishing, hiking, golfing, cycling, skiing, kayaking, and
+              kite boarding.
+            </p>
+            
+
+        <div class="search_results">
+          <p>Example output from this website:</p>
+          <p style="font-size:20px;">🚴🏼  Cycling Ideal Conditions:</p>
+          <ul>
+            <li>Time window: 5 hours.  10/27/2023 from 11 AM to 4 PM</li>
+            <li>Time window: 2 hours.  10/30/2023 from 9 AM to 11 AM</li>
+          </ul>
+        </div>
+        </article>
+
+        <article id="usage">
+          <h2>How to use this website.</h2>
+          <p>Using this website is really easy, just follow the following steps:</p>
+          <ol>
+            <li>Enter the city, state of the location you want to do an outdoor activity in.</li>
+            <li>Click the search button.</li>
+            <li><i>Optional:</i> Enter start and end dates to limit your search to specific days.</li>
+            <li><i>Optional:</i> Check the weekends only box to only show weekend days.</li>
+            <li>Scroll through the search results to see the different outdoor activities available and their
+            ideal condition time windows.</li>
+          </ol>
+        </article>
+
+        <article id="results">
+          <h2>Search for Ideal Conditions.</h2>
+
+          <form action="" method="get" class="form">
+            <div class="form">
+              <label for="location">* Enter a City, State: </label><input type="text" name="location" id="location" required />
+              <button class="favorite styled"
+                      type="submit"
+                      formmethod="get"
+                      value="location"
+                      formaction="https://0ska9ic1a3.execute-api.us-east-2.amazonaws.com/test/idealconditions">Search</button>
+              <p><i>(optional selections)</i></p>
+             
+              <p><label for="start_date">Start date: </label><input type="date" name="start_date" id="start_date"/>
+                <label for="end_date">End date: </label><input type="date" name="end_date" id="end_date"/>
+              </p>
+              <p><label for="weekends_only">Weekends only: </label><input type="checkbox" name="weekends_only" id="weekends_only"/> </p>
+
+
+            </div>
+          </form>
+        </article>
+
+        <article id="results" >
+          <h2>Search Results</h2>
+
+          <div class="search_results">
+          <p style="font-size:20px;">🚴🏼  Cycling Ideal Conditions:</p>
+          <ul>
+            <li>Time window: 5 hours.  10/27/2023 from 11 AM to 4 PM</li>
+            <li>Time window: 2 hours.  10/30/2023 from 9 AM to 11 AM</li>
+          </ul>
+
+          <p style="font-size:20px;">🏃🏼   Running IdealConditions:</p>
+          <ul>
+            <li>Time window: 8 hours.  10/27/2023 from 9 AM to 5 PM</li>
+            <li>Time window: 4 hours.  10/30/2023 from 8 AM to 12 AM</li>
+          </ul>
+        
+
+        <p style="font-size:20px;">⛷️  Skiing Ideal Conditions:</p>
+        <ul>
+          <li>No times with ideal conditions were found.</li>
+        </ul>
+      </div>
+        </article>
+
+        <p>For support or questions about this website, contact <a href="mailto:info@jdstrongpdx.com">info@jdstrongpdx.com</a></p>
+      </section>
+
+    </main>
+  </body>
+  <footer>
+    <p>&copy; 2023 Joel Strong</p>
+  </footer>
+</html>
