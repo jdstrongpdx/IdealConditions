@@ -18,3 +18,9 @@ Response:
   2. Status - Either complete or contains error description
   3. Information - location information that was fetched from text search (city, state, latitude, longitude)
   4. Forecast - a parsed JSON forecast for the next 155 hours for the entered location
+
+UML Diagram: 
+![UML Diagram](https://github.com/jdstrongpdx/IdealConditions/blob/main/UML%20Diagram.png?raw=true)
+
+Usage Diagram (using Postman):
+![UML Diagram](https://github.com/jdstrongpdx/IdealConditions/blob/main/Usage%20Example.png?raw=true)
