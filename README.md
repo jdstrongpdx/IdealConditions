@@ -22,5 +22,5 @@ Response:
 UML Diagram: 
 ![UML Diagram](https://github.com/jdstrongpdx/IdealConditions/blob/main/UML%20Diagram.png?raw=true)
 
-Usage Diagram (using Postman):
+Usage Example and Return (using Postman):
 ![UML Diagram](https://github.com/jdstrongpdx/IdealConditions/blob/main/Usage%20Example.png?raw=true)
